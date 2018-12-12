@@ -1,5 +1,14 @@
-# This file contains commands for installing an arangodb cluster, creating a database and collections and finally querying those documents
+# This file contains commands for starting an arangodb cluster, creating a database and collections and finally querying those documents. Note that here we are using arangodb 3.3.19
 
 # Consider three virtual machines having the following IP addresses: 192.168.10.10, 192.168.10.15 and 192.168.10.21
 
-1 - To create a cluster of three machines with Mac1 (192.168.10.15) as head node in the cluster, type the following commands 
+1 - To create a cluster of three machines with Mac1 (192.168.10.15) as head node in the cluster, type the following commands:
+
+1.1 start an arangodb instance on the head node (192.168.10.15) in the cluster
+arangodb &
+
+1.2 start an arangodb instance on the second node and join the head node
+agandodb --starter.join 192.168.10.15 &
+
+1.3 repeat the same with the last node
+agandodb --starter.join 192.168.10.15 &
