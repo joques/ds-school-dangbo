@@ -1,0 +1,5 @@
+# This file contains commands for installing an arangodb cluster, creating a database and collections and finally querying those documents
+
+# Consider three virtual machines having the following IP addresses: 192.168.10.10, 192.168.10.15 and 192.168.10.21
+
+1 - To create a cluster of three machines with Mac1 (192.168.10.15) as head node in the cluster, type the following commands 
