@@ -1,0 +1,15 @@
+dependencies:
+ - python=3.6
+ - tensorflow
+ - matplotlib
+ - keras
+ - opencv
+ - jupyter
+ - seaborn
+ - tqdm
+ - pandas
+ - requests
+ - openpyxl
+ - pip:
+   - watermark
+   - pytest
